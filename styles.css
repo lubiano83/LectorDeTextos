@@ -86,6 +86,7 @@ body {
 }
 #Formulario .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.5);
+    /* line-height: 1; */
 }
 #Formulario .dropdown-item {
     color: #fff;
