@@ -3,10 +3,18 @@
 const form = document.getElementById("Formulario");
 const TEXTO = document.getElementById("exampleFormControlTextarea1");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const text = TEXTO.value;
-    const utterThis = new SpeechSynthesisUtterance(text);
+function generarAudioIngles() {
+    const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
+    const utterThis = new SpeechSynthesisUtterance(TEXTO);
+    utterThis.lang = "en";
+    window.speechSynthesis.speak(utterThis);
+}
+
+function generarAudioEspañol() {
+    const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
+    const utterThis = new SpeechSynthesisUtterance(TEXTO);
     utterThis.lang = "es";
     window.speechSynthesis.speak(utterThis);
-});
+}
+
+
