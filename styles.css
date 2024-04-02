@@ -73,7 +73,9 @@ body {
 #Formulario .submit:hover {
     scale: 1.1;
 }
-
+#Formulario .btn {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 #Formulario .btn:hover {
     scale: 1.1;
     background-color: rgba(0, 0, 0, 0.5);
@@ -86,6 +88,9 @@ body {
 }
 #Formulario .dropdown-item {
     color: #fff;
+}
+#Formulario .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
