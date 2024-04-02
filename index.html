@@ -23,10 +23,18 @@
             </div>
             <textarea class="form-control textarea" name="input" type="textarea" id="exampleFormControlTextarea1" rows="3" required></textarea>
     
-            <div>
+            <div class="contenedor">
                 <button type="reset" class="reset boton">Reset</button>
-                <button type="submit" class="submit boton" onClick=generarAudioEspañol()>Español</button>
-                <button type="submit" class="submit boton" onClick=generarAudioIngles()>Ingles</button>
+                <!-- <button type="submit" class="submit boton" onClick=generarAudioEspañol()>Español</button>
+                <button type="submit" class="submit boton" onClick=generarAudioIngles()>Ingles</button> -->
+                <!-- Dropdown Bootstrap -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Idioma</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onClick=generarAudioEspañol()>Español</a></li>
+                    <li><a class="dropdown-item" onClick=generarAudioIngles()>Ingles</a></li>
+                    </ul>
+                </div>
             </div>
         </form>
         <!-- Bootstrap Js -->
