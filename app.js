@@ -26,7 +26,7 @@ function generarAudioIngles() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
 
     // Hacer la solicitud de traducción a la API de Google
-    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=en&dt=t&q=" + encodeURIComponent(TEXTO))
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + encodeURIComponent(TEXTO))
     .then(response => response.json())
     .then(data => {
         const textoTraducido = data[0][0][0]; // Obtener el texto traducido
@@ -45,7 +45,7 @@ function generarAudioFrances() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
 
     // Hacer la solicitud de traducción a la API de Google
-    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=fr&dt=t&q=" + encodeURIComponent(TEXTO))
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=fr&dt=t&q=" + encodeURIComponent(TEXTO))
     .then(response => response.json())
     .then(data => {
         const textoTraducido = data[0][0][0]; // Obtener el texto traducido
@@ -64,7 +64,7 @@ function generarAudioAleman() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
 
     // Hacer la solicitud de traducción a la API de Google
-    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=de&dt=t&q=" + encodeURIComponent(TEXTO))
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=de&dt=t&q=" + encodeURIComponent(TEXTO))
     .then(response => response.json())
     .then(data => {
         const textoTraducido = data[0][0][0]; // Obtener el texto traducido
@@ -83,7 +83,7 @@ function generarAudioPortugues() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
 
     // Hacer la solicitud de traducción a la API de Google
-    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=pt&dt=t&q=" + encodeURIComponent(TEXTO))
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q=" + encodeURIComponent(TEXTO))
     .then(response => response.json())
     .then(data => {
         const textoTraducido = data[0][0][0]; // Obtener el texto traducido
@@ -102,7 +102,7 @@ function generarAudioItaliano() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
 
     // Hacer la solicitud de traducción a la API de Google
-    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=it&dt=t&q=" + encodeURIComponent(TEXTO))
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=it&dt=t&q=" + encodeURIComponent(TEXTO))
     .then(response => response.json())
     .then(data => {
         const textoTraducido = data[0][0][0]; // Obtener el texto traducido
