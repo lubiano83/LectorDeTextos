@@ -1,0 +1,75 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/lectura.jpeg);
+    background-size: cover;
+}
+/* Formulario */
+#Formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#Formulario .contenedor {
+    display: flex;
+}
+#Formulario .contenedor svg {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    color: #000;
+    margin-top: -1px;
+}
+#Formulario h4 {
+    margin-bottom: -5px;
+    font-size: 30px;
+    color: #000;
+    text-decoration: underline;
+}
+#Formulario .textarea {
+    color: #fff;
+    width: 50vw;
+    min-width: 300px;
+    height: 50vh;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#Formulario .reset, .submit {
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px 5px 0px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Formulario .reset:hover {
+    scale: 1.1;
+}
+#Formulario .submit:hover {
+    scale: 1.1;
+}
+
+::placeholder {
+    color: #fff; /* Cambia el color del texto del placeholder */
+}
+
+
