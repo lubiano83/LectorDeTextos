@@ -5,9 +5,21 @@ const TEXTO = document.getElementById("exampleFormControlTextarea1");
 
 function generarAudioEspañol() {
     const TEXTO = document.getElementById("exampleFormControlTextarea1").value;
-    const utterThis = new SpeechSynthesisUtterance(TEXTO);
-    utterThis.lang = "es";
-    window.speechSynthesis.speak(utterThis);
+
+    // Hacer la solicitud de traducción a la API de Google
+    fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + encodeURIComponent(TEXTO))
+    .then(response => response.json())
+    .then(data => {
+        const textoTraducido = data[0][0][0]; // Obtener el texto traducido
+
+        // Crear un elemento de audio para la síntesis de voz
+        const utterThis = new SpeechSynthesisUtterance(textoTraducido);
+        utterThis.lang = "es"; // Establecer el idioma del habla en español
+
+        // Reproducir el texto traducido en voz alta en español
+        window.speechSynthesis.speak(utterThis);
+    })
+    .catch(error => console.error('Error:', error));
 }
 
 function generarAudioIngles() {
