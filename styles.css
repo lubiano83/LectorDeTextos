@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Body */
 body {
     min-height: 100vh;
@@ -20,6 +21,7 @@ body {
     background-image: url(./img/lectura.jpeg);
     background-size: cover;
 }
+
 /* Formulario */
 #Formulario {
     display: flex;
@@ -40,9 +42,10 @@ body {
     margin-right: 10px;
     color: #000;
     margin-top: 8px;
+    margin-bottom: -16px;
 }
 #Formulario h4 {
-    margin-bottom: -8px;
+    margin-bottom: -25px;
     font-size: 30px;
     color: #000;
     font-weight: bold;
@@ -57,6 +60,7 @@ body {
     min-height: 300px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* Botones */
 #Formulario .reset, .submit, .btn {
     color: #fff;
@@ -92,6 +96,7 @@ body {
 #Formulario .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* Firma */
 .firma {
     text-align: center;
